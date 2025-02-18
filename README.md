@@ -20,13 +20,16 @@ A C++ task scheduler implementing computational graph execution with automatic d
 
 ## Execution Pipeline
 
-1. Task Registration
+1. **Task Registration**
+
 User adds tasks with add() method, creating implicit graph edges through getFutureResult().
 
-2. Dependency Resolution
+2. **Dependency Resolution**
+
 Topological sort ensures tasks execute after their dependencies.
 
-3. Memoized Execution
+3. **Memoized Execution**
+
 Results stored in type-erased containers for future access.
 
 ## Testing
